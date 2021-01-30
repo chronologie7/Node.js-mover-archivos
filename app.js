@@ -1,7 +1,7 @@
-var fs = require("fs");
-var rutaOriginal = "./archivos/";
-var nuevaRuta = "./archivos_otros/";
-var archivo = "archivo_original.txt";
+const fs = require("fs");
+const rutaOriginal = "./archivos/";
+const nuevaRuta = "./archivos_otros/";
+const archivo = "archivo_original.txt";
 
 function copiarArchivo(rutaOriginal, nuevaRuta, archivo) {
     fs.copyFile(rutaOriginal + archivo, nuevaRuta + archivo, (error) => {
